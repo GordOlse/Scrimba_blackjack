@@ -13,14 +13,16 @@ secondCard = Math.floor(Math.random() * 12) + 2;
 
 sum = firstCard + secondCard;
 
-if (sum <= 20) {
-  message = 'Do you want to draw another card?';
-} else if (sum === 21) {
-  message = 'BLACKJACK!';
-  hasBlackjack = true;
-} else {
-  message = 'Sorry, you lose!';
-  isAlive = false;
-}
+function startGame() {
+  if (sum <= 20) {
+    message = 'Do you want to draw another card?';
+  } else if (sum === 21) {
+    message = 'BLACKJACK!';
+    hasBlackjack = true;
+  } else {
+    message = 'Sorry, you lose!';
+    isAlive = false;
+  }
 
-console.log(message);
+  console.log(message);
+}
