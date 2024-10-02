@@ -20,7 +20,7 @@ cards = [firstCard, secondCard];
 sum = firstCard + secondCard;
 
 function getRandomCard() {
-  return Math.floor(Math.random() * 11) + 2;
+  return Math.floor(Math.random() * 11) + 1;
 }
 
 function startGame() {
